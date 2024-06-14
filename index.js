@@ -72,6 +72,11 @@ const resetGame = () => {
     location.reload();
     gameOver.play();
   });
+  window.addEventListener("keydown", (e) => {
+    if(e.keyCode === 32 || e.keyCode === 13){
+      location.reload();
+    }
+  })
 };
 
 // Function to make move
